@@ -1,18 +1,3 @@
-# Unive thesis template in typst
-
-This is a basic template that follows the recommended format for theses at Ca' Foscari University.
-
-## Preview
-
-<div align="center">
-    <img src="./frontpage.png">
-</div>
-
-## Usage
-
-Inside the `template` folder, there is the following example...
-
-```typ
 #import "@preview/simple-ve-thesis:0.1.0": template
 
 #let bib = bibliography("./refs.bib")
@@ -25,11 +10,11 @@ Inside the `template` folder, there is the following example...
   ),
   date: "202x/202x",
   course: "Course name",
-  logo: image("images/Unive.svg", width: 20%),
-  is_master: false, // Change the title if it is a bachelor's or master's thesis
+  logo: none, // image("images/Unive.svg", width: 20%)
+  is-master: false, // Change the title if it is a bachelor's or master's thesis
   supervisor: "Prof. Nome Cognome",
   co-supervisor: "Prof. Nome Cognome",
-  abstract: "./abstract.typ",
+  abstract: "template/abstract.typ",
   lang: "it",
   bib: bib, // Pass the bibliography object instead of a file path
 )
@@ -40,5 +25,27 @@ Inside the `template` folder, there is the following example...
 == Parte uno
 #lorem(100)
 
-...
-```
+== Parte due
+#lorem(300)
+
+= Background
+#lorem(100)
+
+== Parte uno
+#lorem(100)
+
+=== Parte extra
+
+#lorem(100)
+
+== Parte due
+#lorem(150)
+
+== Parte tre
+#lorem(100)
+
+= Terzo capitolo
+#lorem(50)
+
+= Riconoscimenti
+#lorem(100)

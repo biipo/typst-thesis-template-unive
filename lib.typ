@@ -23,8 +23,8 @@
   co-supervisor: (),
   course: (),
   date: (),
-  logo: none, // TODO: utilizzare file SVG così che se esportato in svg, tutto il documento è scalabile
-  is_master: false,
+  logo: image("images/Unive.svg", width: 20%),
+  is-master: false,
   abstract: (),
   lang: "en",
   bib: (),
@@ -151,7 +151,7 @@
   }
 
   v(40pt) // Corso di laurea in ...
-  align(center, text(size: sizes.big, if is_master { ref.master } else { ref.bachelor }, weight: "regular"))
+  align(center, text(size: sizes.big, if is-master { ref.master } else { ref.bachelor }, weight: "regular"))
   align(center, text(size: sizes.large, course, weight: "regular"))
 
   v(40pt) // "Tesi di laurea"
@@ -226,7 +226,6 @@
 
   if bib != () {
     // pagebreak()
-    //bib
-    bibliography("./refs.bib")
+    bib
   }
 }
