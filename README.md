@@ -1,6 +1,6 @@
 # Unive thesis template in typst
 
-This is a basic template that follows the recommended format for theses at Ca' Foscari University.
+This is a basic template that follows the recommended format for theses at Ca' Foscari University (Unive), written in [Typst](https://typst.app/).
 
 ## Preview
 
@@ -42,3 +42,14 @@ Inside the `template` folder, there is the following example...
 
 ...
 ```
+Considering having just the following files
+```
+example/
+        main.typ
+        refs.bib
+        abstract.typ
+        images/
+               Unive.svg
+               Unive_square.png
+```
+Just compile the file with the command `typst compile main.typ`.
