@@ -26,10 +26,10 @@ Inside the `template` folder, there is the following example...
   date: "202x/202x",
   course: "Course name",
   logo: image("images/Unive.svg", width: 20%),
-  is_master: false, // Change the title if it is a bachelor's or master's thesis
+  is-master: false, // Change the title if it is a bachelor's or master's thesis
   supervisor: "Prof. Nome Cognome",
   co-supervisor: "Prof. Nome Cognome",
-  abstract: "./abstract.typ",
+  abstract: include "abstract.typ",
   lang: "it",
   bib: bib, // Pass the bibliography object instead of a file path
 )
@@ -50,6 +50,5 @@ example/
         abstract.typ
         images/
                Unive.svg
-               Unive_square.png
 ```
 Just compile the file with the command `typst compile main.typ`.

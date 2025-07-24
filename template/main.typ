@@ -15,7 +15,7 @@
   is-master: false, // Change the title if it is a bachelor's or master's thesis
   supervisor: "Prof. Nome Cognome",
   co-supervisor: "Prof. Nome Cognome",
-  abstract: "template/abstract.typ",
+  abstract: include "abstract.typ",
   lang: "it",
   bib: bib, // Pass the bibliography object instead of a file path
 )
